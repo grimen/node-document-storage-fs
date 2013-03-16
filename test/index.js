@@ -8,6 +8,8 @@ var Storage = require('node-document-storage');
 module.exports = Storage.Spec('FS', {
   module: require('..'),
   engine: require('node-fs'),
+  id: 'fs',
+  protocol: 'file',
   db: '/tmp/default-test',
   default_url: 'file:///tmp/default-test',
   authorized_url: undefined,
